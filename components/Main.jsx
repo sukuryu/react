@@ -3,6 +3,7 @@ import React from "react";
 import Slider from "./SliderSample.jsx"
 import Circul from "./circle.jsx"
 import SlideMenu from "./Drawer.jsx";
+import Tab from "./MenuTab.jsx";
 
 class Main extends React.Component {
     render(){
@@ -12,6 +13,7 @@ class Main extends React.Component {
                 <AppBar />
                 <Slider />
                 <Circul />
+                <Tab />
             </div>
         );
     }

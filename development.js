@@ -9,7 +9,8 @@ export default {
 
   output: {
     path: dist,
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    
   },
 
   module: {
@@ -20,6 +21,12 @@ export default {
         loader: 'babel-loader'
       }
     ]
+  },
+  devServer: {
+  contentBase: "./",
+  // 動作ポート指定
+  port: 3000,
+  inline: true,
   },
 
   resolve: {
